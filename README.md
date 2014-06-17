@@ -107,3 +107,63 @@ $(".faq-slider").msSlider(5);
             })
         }
     }(jQuery);
+
+
+CSS: 
+/* === MS SLIDER PLUGIN ========================================================================================================================= */
+.msSlider {
+  overflow: hidden;
+  position: relative; }
+
+.msSlider a.slide-move {
+  position: absolute;
+  width: 22px;
+  height: 60px;
+  top: 50%;
+  margin-top: -30px;
+  z-index: 10;
+  background-image: url("../Medias/images/slide-arrows.png"); }
+
+.msSlider a.disabled {
+  background-image: none;
+  cursor: default; }
+
+.msSlider .slide-left {
+  left: 0; }
+
+.msSlider .slide-right {
+  right: 0;
+  background-position: right 0; }
+
+.msWrapper {
+  margin-left: 22px;
+  margin-right: 22px;
+  overflow: hidden; }
+
+.msSlider ul {
+  position: relative; }
+
+.msSlider li {
+  text-align: center;
+  overflow: hidden; }
+
+.msSlider li * {
+  text-align: center;
+  margin: 0 auto; }
+
+.msSlider ul, .msSlider li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+.msSlider ul:before,
+.msSlider ul:after {
+  content: " ";
+  display: table; }
+
+.msSlider ul:after {
+  clear: both; }
+
+.msSlider ul li {
+  float: left;
+  text-align: center; }
